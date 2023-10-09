@@ -24,6 +24,4 @@ yarn run build
 
 ## Demo and Feature
 
-1. Fetch And Loading
-
 ![Demo 1](./src/assets/images/lookup.png)
