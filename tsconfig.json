@@ -5,18 +5,31 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
     "paths": {
-      "@nodewave/*": ["./src/*"]
+      "@nodewave/component/*": ["./src/components/*"],
+      "@nodewave/page/*": ["./src/pages/*"],
+      "@nodewave/asset/*": ["./src/assets/*"],
+      "@nodewave/style/*": ["./src/styles/*"],
+      "@nodewave/util/*": ["./src/utils/*"],
+      "@nodewave/config/*": ["./src/configs/*"],
+      "@nodewave/container/*": ["src/containers/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

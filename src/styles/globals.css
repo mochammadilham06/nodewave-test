@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +18,7 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.bg-hero {
+  background-image: url("../assets/images/hero-bg.png");
+}
+.custom-list {
+  list-style-type: disc;
+  color: white;
+}
+.custom-discount {
+  text-decoration: line-through;
+  text-decoration-color: #ff3939;
 }
